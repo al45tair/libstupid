@@ -1,0 +1,66 @@
+libstupid
+=========
+
+What is this?
+-------------
+
+Some damned fool programmers apparently can't tell the difference between
+upper and lower case.  This is annoying because it means that they constantly
+break compatibility with case-sensitive filesystems.
+
+Most of these idiots started on the Windows platform, which is basically
+always case insensitive.  A few of them started on the Mac OS platform, prior
+to Mac OS X.  One or two of them (particularly those working for a well-known
+game porting company beginning with the letter "A", and those working for
+another well-known gaming company beginning with the letter "V") are *so*
+aggressively stupid that they refuse to fix their bugs and instead try to
+claim that it isn't their problem.  They may even *add* code to aggressively
+stop people from running their software on a case-sensitive filesystem, on the
+assumption that this is better than fixing their bugs.
+
+libstupid is a library for them.  Or rather, to address their wanton idiocy.
+You use it via dyld interposing, and it replaces a set of path-based functions
+with modified versions that, on finding that the programmer is an idiot, will
+search for files with names that differ only in case.
+
+
+How do I use it?
+----------------
+
+Broadly speaking you do something like this:
+
+  DYLD_INSERT_LIBRARIES=<path to libstupid.dylib> <executable path>
+
+So, perhaps you install libstupid.dylib in /usr/local/lib, after building it
+with Xcode 4, and then you want to run a program called Foo.app, written by a
+stupid person.  So you start Terminal and enter
+
+  DYLD_INSERT_LIBRARIES=/usr/local/lib/libstupid.dylib \
+    /Applications/Foo.app/Contents/MacOS/Foo
+
+A certain piece of software written by the aforementioned company starting
+with the letter "V", which itself starts with the letter "S", can be run using
+something like
+
+  DYLD_INSERT_LIBRARIES=/usr/local/lib/libstupid.dylib \
+    /Applications/Something.app/Contents/MacOS/something.sh
+
+
+I can't get this working
+------------------------
+
+Then you probably shouldn't run it, and should instead complain at the idiots
+who are causing you a problem.
+
+
+I need help
+-----------
+
+There is no help.
+
+
+I *am* an idiot programmer and I find your diatribe against me offensive
+------------------------------------------------------------------------
+
+Grow up and fix your bugs, and then I'll talk to you.  Otherwise, you're too
+stupid to exist.

@@ -126,7 +126,7 @@ find_path (const char *restrict path,
         
         if (!*pend && ignore_last) {
           // In this case, the last part wasn't there, but we don't care
-          fprintf (stderr, "wanted: %s\nmatched partial: %s\n", path, new_path);
+          //fprintf (stderr, "wanted: %s\nmatched partial: %s\n", path, new_path);
           
           if (pmax - ptr < chunk_len + 2) {
             free (matched_path);
@@ -142,7 +142,7 @@ find_path (const char *restrict path,
     }
   }
   
-  fprintf (stderr, "wanted: %s\nmatched full: %s\n", path, new_path);
+  //fprintf (stderr, "wanted: %s\nmatched full: %s\n", path, new_path);
   
   free (matched_path);
   
