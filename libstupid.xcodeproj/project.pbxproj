@@ -1,0 +1,198 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D3789E9A136030ED00137221 /* stupid.c in Sources */ = {isa = PBXBuildFile; fileRef = D3789E98136030ED00137221 /* stupid.c */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		D3789E91136030BD00137221 /* libstupid.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libstupid.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		D3789E98136030ED00137221 /* stupid.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = stupid.c; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D3789E8E136030BD00137221 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D3789E86136030BD00137221 = {
+			isa = PBXGroup;
+			children = (
+				D3789E9C13603B5500137221 /* libstupid */,
+				D3789E92136030BD00137221 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D3789E92136030BD00137221 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D3789E91136030BD00137221 /* libstupid.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D3789E9C13603B5500137221 /* libstupid */ = {
+			isa = PBXGroup;
+			children = (
+				D3789E98136030ED00137221 /* stupid.c */,
+			);
+			name = libstupid;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		D3789E8F136030BD00137221 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		D3789E90136030BD00137221 /* libstupid */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D3789E95136030BD00137221 /* Build configuration list for PBXNativeTarget "libstupid" */;
+			buildPhases = (
+				D3789E8D136030BD00137221 /* Sources */,
+				D3789E8E136030BD00137221 /* Frameworks */,
+				D3789E8F136030BD00137221 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = libstupid;
+			productName = libstupid;
+			productReference = D3789E91136030BD00137221 /* libstupid.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D3789E88136030BD00137221 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = D3789E8B136030BD00137221 /* Build configuration list for PBXProject "libstupid" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = D3789E86136030BD00137221;
+			productRefGroup = D3789E92136030BD00137221 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D3789E90136030BD00137221 /* libstupid */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D3789E8D136030BD00137221 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3789E9A136030ED00137221 /* stupid.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		D3789E93136030BD00137221 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		D3789E94136030BD00137221 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		D3789E96136030BD00137221 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				EXECUTABLE_PREFIX = "";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D3789E97136030BD00137221 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				EXECUTABLE_PREFIX = "";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D3789E8B136030BD00137221 /* Build configuration list for PBXProject "libstupid" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D3789E93136030BD00137221 /* Debug */,
+				D3789E94136030BD00137221 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D3789E95136030BD00137221 /* Build configuration list for PBXNativeTarget "libstupid" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D3789E96136030BD00137221 /* Debug */,
+				D3789E97136030BD00137221 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D3789E88136030BD00137221 /* Project object */;
+}
